@@ -1,9 +1,10 @@
+import java.util.List;
 import java.util.ArrayList;
 import java.util.Collections;
 
 public class ArrayListExample {
     public static void main(String[] args) {
-        ArrayList<Integer> arrList = new ArrayList<>();
+        List<Integer> arrList = new ArrayList<>();
 
         arrList.add(3);
         arrList.add(1);
