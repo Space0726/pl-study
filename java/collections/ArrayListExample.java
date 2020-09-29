@@ -7,12 +7,13 @@ public class ArrayListExample {
         List<Integer> arrList = new ArrayList<>();
 
         arrList.add(3);
-        arrList.add(1);
+        arrList.add(9);
         arrList.add(2);
 
         for (int a: arrList)
             System.out.println(a);
-        System.out.println("Size: " + arrList.size() + "\n");
+        System.out.println("Size: " + arrList.size());
+        System.out.println("Random Access at 1: " + arrList.get(1) + "\n");
 
         Collections.sort(arrList);
         for (int a: arrList)
