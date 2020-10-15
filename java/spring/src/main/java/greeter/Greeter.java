@@ -10,4 +10,8 @@ public class Greeter {
     public void setFormat(String format) {
         this.format = format;
     }
+
+    public void setUpper() {
+        this.format = this.format.toUpperCase();
+    }
 }
