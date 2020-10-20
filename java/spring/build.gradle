@@ -4,7 +4,7 @@ apply plugin: 'application'
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 compileJava.options.encoding = "UTF-8"
-mainClassName="greeter.Main"
+mainClassName="aop.MainProxy"
 
 repositories {
     mavenCentral()
@@ -12,6 +12,7 @@ repositories {
 
 dependencies {
     compile 'org.springframework:spring-context:5.0.2.RELEASE'
+    compile 'org.aspectj:aspectjweaver:1.8.13'
 }
 
 task wrapper(type: Wrapper) {
