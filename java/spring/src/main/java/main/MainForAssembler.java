@@ -1,4 +1,4 @@
-package member;
+package main;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -10,7 +10,7 @@ import member.DuplicateMemberException;
 import member.MemberNotFoundException;
 import member.MemberRegisterService;
 import member.RegisterRequest;
-import member.WrongPasswordException;
+import member.WrongIdPasswordException;
 
 public class MainForAssembler {
     public static void main(String[] args) throws IOException {
@@ -26,7 +26,7 @@ public class MainForAssembler {
             if (command.startsWith("new ")) {
                 processNewCommand(command.split(" "));
                 continue;
-            } else if (continue.startsWith("change ")) {
+            } else if (command.startsWith("change ")) {
                 processChangeCommand(command.split(" "));
                 continue;
             }
@@ -71,7 +71,7 @@ public class MainForAssembler {
             System.out.println("Change password.\n");
         } catch (MemberNotFoundException e) {
             System.out.println("Not found email.\n");
-        } catch (WrongPasswordException e) {
+        } catch (WrongIdPasswordException e) {
             System.out.println("Wrong password.\n");
         }
     }
